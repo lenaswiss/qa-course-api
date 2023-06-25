@@ -1,0 +1,11 @@
+/Users/lena/Documents/Java/aqa-api-testing/src/main/java/org/example/TrelloApiClient.java
+/Users/lena/Documents/Java/aqa-api-testing/src/main/java/org/example/models/SearchMovie.java
+/Users/lena/Documents/Java/aqa-api-testing/src/main/java/org/example/interceptors/BaseHeadersInterceptor.java
+/Users/lena/Documents/Java/aqa-api-testing/src/main/java/org/example/ImbdApiClient.java
+/Users/lena/Documents/Java/aqa-api-testing/src/main/java/org/example/models/Movies.java
+/Users/lena/Documents/Java/aqa-api-testing/src/main/java/org/example/models/Ratings.java
+/Users/lena/Documents/Java/aqa-api-testing/src/main/java/org/example/models/Title.java
+/Users/lena/Documents/Java/aqa-api-testing/src/main/java/org/example/models/Results.java
+/Users/lena/Documents/Java/aqa-api-testing/src/main/java/org/example/models/Movie.java
+/Users/lena/Documents/Java/aqa-api-testing/src/main/java/org/example/services/MoviesService.java
+/Users/lena/Documents/Java/aqa-api-testing/src/main/java/org/example/services/SearchService.java
