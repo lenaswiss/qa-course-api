@@ -13,8 +13,8 @@ public interface MoviesService {
     Call<Movies> getTop250Movies(@Path("api_kye") String api_kye);
 
     @GET("en/API/Title/{api_kye}/{item_id}/Ratings")
-    Call<Title> getItemTitle (@Path("api_kye") String api_kye, @Path("item_id") String item_id);
+    Call<Title> getItemTitle(@Path("api_kye") String api_kye, @Path("item_id") String item_id);
 
     @GET("en/API/Report/{api_kye}/{item_id}")
-    Call<ResponseBody> getItemPoster (@Path("api_kye") String api_kye, @Path("item_id") String item_id);
+    Call<ResponseBody> getItemPoster(@Path("api_kye") String api_kye, @Path("item_id") String item_id);
 }

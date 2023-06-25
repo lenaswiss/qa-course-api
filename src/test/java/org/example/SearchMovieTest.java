@@ -22,9 +22,7 @@ public class SearchMovieTest {
      */
     @Test
     public void searchMovieTest() throws IOException {
-        ImbdApiClient imbdApiClient = new ImbdApiClient();
-        Assertion assertion = new Assertion();
-        var searchResults = imbdApiClient.searchService.getMovieByTitle(API_KYE, "inception 2010")
+        var searchResults = apiClient.searchService.getMovieByTitle(API_KYE, "inception 2010")
                 .execute().body();
         assertion.assertTrue((searchResults.results.stream().findFirst().get().title).equals("Inception"),
                 "The Title is not equal to Inception");
@@ -91,10 +89,9 @@ public class SearchMovieTest {
         List<String> expectedGenresList = Arrays.asList("comedy", "thriller");
         for (Results r : results) {
             var actualGenresList = Arrays.asList(r.genres.toLowerCase().split(", "));
-//            assertion.assertTrue(expectedGenresList.stream().anyMatch(actualGenresList::contains),
-//                    "Result does not contain sent in request \"genres\"");
-            System.out.println(expectedGenresList.stream().anyMatch(actualGenresList::contains));
+            assertion.assertTrue(expectedGenresList.stream().anyMatch(actualGenresList::contains),
+                    String.format(" The movie title :\"%s\" has differ genres than expected , where \"%s\"" +
+                            " and (genres list: %s) are fields values from the result.", r.title, r.title, r.genres));
         }
-        System.out.println(results.size());
     }
 }
